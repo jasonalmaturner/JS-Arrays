@@ -237,7 +237,7 @@ for(var i = 0; i < num2; i++){
   arr2.push(i);
 }
 //Above is some code that adds a random number to both arr1 and arr2.
-//Write a function that is given arr1 and arr2 is it's only arguments. Return the array which is longest.
+//Write a function that is given arr1 and arr2 as its only arguments. Return the array which is longest.
 
 var longer = function(arr1, arr2) {
   if(arr1.length > arr2.length) {
@@ -257,4 +257,26 @@ var longer = function(arr1, arr2) {
 var both = function(arr1, arr2) {
   var newArray = arr1.concat(arr2);
   return newArray;
+}
+
+
+// Toy problem
+var birds = ['red breasted merganser', 'osprey', 'canada goose', 'eurasion wigeon', 'black capped chickadee'];
+var finder = function(string, array) {
+  if(array.indexOf(string) !== -1) {
+    return true;
+  } else {
+    return false;
+  }
+}
+var finder2 = function(string, array) {
+  for(var i = 0; i < array.length; i++) {
+    if(array[i] === string) {
+      return true;
+    }
+  }
+  return false;
+}
+var finder3 = function(string, array) {
+  return array.indexOf(string) !== -1;
 }
